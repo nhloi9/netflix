@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*,
+body,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mooli', sans-serif;
+	font-size: medium;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/* Basic css for tailwind */
+.flex-colo {
+	@apply flex flex-col justify-center items-center;
+}
+.flex-rows {
+	@apply flex flex-row justify-center items-center;
+}
+.flex-btn {
+	@apply flex justify-between items-center;
+}
+.transitions {
+	@apply transition duration-300 ease-in;
+}
+.zIndex {
+	@apply z-[1000];
+}
+
+/* .MuiRating-iconEmpty {
+  border: 1px yellow !important;
+} */
+.MuiRating-icon {
+	color: rgb(217, 255, 0) !important;
+	box-shadow: 1px !important;
+}
+
+.movie-table .ant-table-row {
+	background-color: white;
+}
+
+.user-table .ant-table-row {
+	background-color: white;
+}
+
+.login .input-password input {
+	background-color: #080a1a !important;
+}
+
+.login input {
+	/* color: white !important; */
+}
+.login .input-password span {
+	color: white !important;
+}
+
+.upload svg {
+	color: white !important;
+}
+
+.add-movie .ant-select-selector {
+	/* background-color: green; */
+}
+
+.add-movie .ant-upload-list-item {
+	color: white !important;
+}
+
+.add-movie .ant-upload-list-item,
+.anticon-paper-clip,
+.anticon.anticon-delete {
+	color: white !important;
+}
+
+/* ant-upload-list-item ant-upload-list-item-undefined */
